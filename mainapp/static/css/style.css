@@ -1,0 +1,342 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Montserrat";
+}
+/* FIN DE ESTILOS GENERALES */
+
+/* ESTILOS DE CABECERA */
+
+#header{
+    position: absolute;
+    width: 100%;
+    /* background-color: #000080; */
+    background-color: rgba(0, 0, 125, 0.8);
+    /* margin-bottom: 50px; */
+    height: 70px;
+    box-shadow: 1px 1px 15px black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.logo{
+    width: 200px;
+}
+
+.logo img{
+    width: 220px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+
+/* ESTILOS DEL MENU  */
+.main ul{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    line-height: 80px;
+}
+
+.main li{
+    display: block;
+    padding-right: 25px;
+    padding-left: 25px;
+    /* border: 1px solid yellow; */
+    
+}
+
+.main a {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat SemiBold";
+    color: white;
+    /* border-bottom: 1px solid white; */
+    transition: all 30ms;
+
+}
+
+.main a:hover{
+    scale: 1.1;
+}
+/* FIN ESTILOS DEL MENU  */
+
+/* FIN DE ESTILOS DE CABECERA */
+
+/* ESTILOS DE DESCRIPCION  */
+
+.desc{
+    height: 100vh;
+    background-color: #ddd;
+    background-image: url("../images/dubai-skyline-at-dusk-jpg_header-144981.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desc article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    width: 100%;
+    margin: 0px auto;
+    /* text-align: center; */
+    height: 100vh ;  
+    background-color: rgba(0, 0, 0, 0.5);  
+}
+
+.desc .text_desc{
+    width: 60%;
+    /* border: 1px solid yellow; */
+    text-align: center;
+}
+
+.desc p{
+    font-family: "Montserrat Light";
+    font-size: 33px;
+    /* margin-bottom: 5px; */
+    color: white;
+    letter-spacing: 10px;
+    line-height: 34px;
+}
+
+.desc .description{
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    letter-spacing: 0;
+}
+
+.desc input[type="text"]{
+    padding: 10px;
+    width: 65%;
+    height: 28px;
+    border: transparent;
+    border-radius: 10px 10px;
+}
+
+button,
+input[type="submit"],
+input[type="button"]{
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 10px 10px;
+    box-shadow: 1px 1px 2px #333;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* FIN ESTILOS DE DESCRIPCION  */   
+
+/* ESTILOS DE CURSOS */
+
+.cursos{
+    width: 100%;
+    /* background-color: #ddd; */
+}
+
+.title{
+    font-size: 28px;
+    font-family: "Montserrat SemiBold";
+    text-align: center;
+    margin-top: 20px;
+    color: #000080;
+}
+
+.cursos hr,
+.travel hr{
+    width: 25%;
+    margin: 5px auto;
+    border-color: red;
+}
+
+.subtitle{
+    font-size: 18px;
+    font-family: "Montserrat light";
+    text-align: center;
+    /* margin-top: -3px; */
+    color: #000080;
+}
+
+.destinos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.destinos article{
+    width: 22%;
+    height: 380px;
+    background-color: #333;
+    color: white;
+    box-shadow: 1px 1px 7px #333;
+    border-radius: 10px 10px;
+    background-image: url("../images/malta.jpeg");
+    background-size: cover;
+    background-position: right;
+}
+
+.destinos h3{
+    line-height: 380px;
+    text-align: center;
+    text-shadow: 1px 1px 10px #333;
+    font-size: 34px;
+    font-family: "Montserrat Light";
+   
+}
+
+.cursos button{
+    display: block;
+    align-items: center;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+/* FIN DE ESTILOS DE CURSOS */
+
+
+/* ESTILOS DE SERVICIOS */
+
+.servicios{
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    background-image: url("../images/dubai-skyline-at-dusk-jpg_header-144981.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bac_serv{
+    background-color: rgba(0, 0, 125, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.servicios article{
+    flex-grow: 1;
+    width: 20%;
+    padding: 35px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Montserrat Light";
+    /* border: 1px solid white; */
+}
+
+.servicios img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* FIN DE ESTILOS DE SERVICIOS */
+
+
+/* ESTILOS DE TURISMO */
+
+.travel{
+    width: 100%;
+    margin-top: 50px;   
+    margin-bottom: 50px;
+}
+
+.cont_travel{
+     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cont_travel article{
+    flex-grow: 1;
+    width: 25%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    border-radius: 10px 10px;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 7px #333;
+    background-image: url("../images/Australia_Day.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.cont_travel h3{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 34px;
+}
+
+.travel button{
+    display: block;   
+    margin: 0px auto;
+    margin-top: 50px;
+    
+}
+/* FIN DE ESTILOS DE TURISMO */
+
+/* ESTILOS DEL FOOTER */
+
+footer{
+    width: 100%;
+    background-image: url("../images/Australia_Day.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    background-color: rgba(0, 0, 125, 0.8);
+    color: white;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    
+}
+.cont_footer{
+    display: flex;
+    /* flex-flow: row wrap; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    padding-left: 20px;
+    padding-right: 40px;
+}
+
+.footer img{
+    width: 400px;
+}
+
+.footer h2{
+    margin-bottom: 20px;
+}
+
+.footer li{
+    list-style: square inside;
+}
+.footer hr{
+    width: 80%;
+    border-color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.footer .autor{
+    text-align: center;
+    margin-top: 10px;
+}
