@@ -1,0 +1,27 @@
+{% extends 'layout/index.html' %}
+{% load static %}
+
+{% block title %} {{ titulo }} {% endblock  %}
+
+{% block content %}
+<div class="content-pg">
+
+    <h1>{{ titulo }}</h1>
+
+    {% for about in cont_about  %}
+    <div class="about">
+        <div class="img-about">
+            <img src="{{ about.image.url }}" alt="{{about.title}}" />
+        </div>
+        <div class="desc-about">
+            <h2>{{about.title}}</h2>
+            <p>
+            {{ about.content|safe}}
+            </p>
+        </div>            
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock  %}

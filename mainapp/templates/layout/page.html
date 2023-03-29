@@ -12,7 +12,7 @@
     <!-- ESTILOS DE FUENTES -->
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
 
-    <title> {% block title %}{% endblock  %} | English & Travels</title>
+    <title> {% block title  %}{% endblock%}  | English & Travels </title>
 </head>
 <body>
     <!-- CABECERA  -->
@@ -22,21 +22,23 @@
         </div>
 
         <!-- MENU  -->
-        <nav class="main">
+        <main class="main">
             <ul>
                 <li><a href="{% url 'home'%}">Inicio</a> </li>
                 <li><a href="{% url 'about'%}">Nosotros</a> </li>
-                <li><a href="{% url 'travels'%}">Viajes</a> </li>
+                <li><a href="#">Destinos</a> </li>
                 <li><a href="#">Idiomas</a> </li>
-                <li><a href="#">Contacto</a> </li>
+                <li><a href="{% url 'contacto' %}">Contacto</a> </li>
             </ul>
-        </nav>
+        </main>
     </header>
 
+    {% block content %}
+    
+    {% endblock %}
 
-{% block content %}
 
-{% endblock  %}
+
 
     <footer>
         <div class="footer">

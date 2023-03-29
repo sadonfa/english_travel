@@ -12,7 +12,7 @@ body{
 /* ESTILOS DE CABECERA */
 
 #header{
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     /* background-color: #000080; */
     background-color: rgba(0, 0, 125, 0.8);
@@ -340,3 +340,57 @@ footer{
     text-align: center;
     margin-top: 10px;
 }
+
+.content-pg {
+    /* border: 1px solid #031F40;  */
+    display: block;
+    width: 80%;
+    min-height: 50vh;
+    margin: 30px auto;
+    padding: 50px;
+    /* box-shadow: 0px 1px 10px #333; */
+}
+
+
+
+/* --- Inicio --- About  */
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;    
+}
+
+
+.about .img-about {
+    width: 30%;
+    margin-right: 40px;
+}
+
+.about .img-about img {
+    width: 100%;
+}
+
+.about .desc-about {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about .desc-about h2 {
+    font-family: "Roboto Black";
+    font-size: 32px;
+    color: #031F40;
+    margin-bottom: 15px;
+}
+
+.about .desc-about p {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #031F40;
+}
+
+/* --- Fin --- About  */

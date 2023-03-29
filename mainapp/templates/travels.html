@@ -1,0 +1,18 @@
+{% extends 'layout/index.html' %}
+
+{% block title %} {{ titulo }} {% endblock  %}
+
+{% block content %}
+
+<div class="content-pg">
+
+    <h1>{{ titulo }}</h1>    
+    {% for travel in travels  %}
+    <div class="box-travels">
+        <img src="{{travel.image.url}}" alt="{{travel.title}}">
+        <span> {{ travel.title }} </span>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock  %}

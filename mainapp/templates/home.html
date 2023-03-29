@@ -1,0 +1,96 @@
+{% extends 'layout/index.html' %}
+{% load static %}
+
+{% block title %} Inicio {% endblock  %}
+
+{% block content %}
+
+<div class="desc">
+    <article>
+        <div class="text_desc">
+          <p>Estudia en el exterior: Idiomas,
+            pregrados y postgrados</p>  
+        </div>
+        
+        <p class="description">Descrubre todo lo que tenemos para ti </p>
+
+        <input type="text">
+        <button>Buscar</button> 
+    </article>        
+</div>
+
+
+<div class="cursos">
+    <h2 class="title">Cursos de Ingles</h2>
+    <hr />
+    <h3 class="subtitle">Nuestros Destinos</h3>
+    <div class="destinos">
+        <article class="bann_dest">
+            <h3>Malta</h3>
+        </article>
+        <article>
+            <h3>Malta</h3>
+        </article>
+        <article>
+            <h3>Malta</h3>
+        </article>            
+    </div>
+    <button>Ver Mas</button>
+</div>
+
+<div class="servicios">
+    
+    <div class="bac_serv">
+
+       
+        <article>
+            <img src="{% static 'images/consulta.png' %}" alt="Imagen">
+            <p>Asesoramiento y tramites</p>
+        </article>
+        <article>
+            <img src="{% static 'images/diploma-y-gorra-de-posgrado(1).png' %}" alt="Imagen">
+            <p>Maestria y posgrados en el extrangero</p>
+        </article>
+        <article>
+            <img src="{% static 'images/auriculares.png' %}" alt="Imagen">
+            <p>Asistencia de viaje a todo el mundo </p>
+        </article>
+        <article>
+            <img src="{% static 'images/travel-and-tourism.png' %}" alt="Imagen">
+            <p>Paquetes turisticos, nacionales e internacionales</p>
+        </article>
+        
+    </div>       
+
+</div>
+
+
+<div class="travel">
+    <h2 class="title">Paquetes Turisticos</h2>
+    <hr />
+    <h3 class="subtitle">Nacionales e Internacionales</h3>
+    <div class="cont_travel">
+        <article>
+            <h3>Destino</h3> 
+        </article>
+        <article>
+            <h3>Destino</h3> 
+        </article>
+        <article>
+            <h3>Destino</h3> 
+        </article>
+        <article>
+            <h3>Destino</h3> 
+        </article>
+        <article>
+            <h3>Destino</h3> 
+        </article>
+        <article>
+            <h3>Destino</h3> 
+        </article>
+    </div>
+    
+    <button>Ver Mas</button>
+</div>
+
+{% endblock  %}
