@@ -1,0 +1,40 @@
+{% extends 'layout/index.html' %}
+{% load static %}
+
+{% block title %} {{ title }} {% endblock  %}
+
+{% block content %}
+<div class="content-pg">
+    <h1>{{ title }}</h1>
+
+    <div class="items-leng">
+        <article class="item">
+            <a href="#">
+                <div class="img-item">
+                    <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
+                </div>
+                <h3>Titulo</h3>
+            </a>
+        </article>
+        <article class="item">
+            <a href="#">
+                <div class="img-item">
+                    <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
+                </div>
+                <h3>Titulo</h3>
+            </a>
+        </article>
+        
+            <article class="item">
+                <a href="{% url 'lengua' %}">
+                    <div class="img-item">
+                        <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
+                    </div>
+                <h3>Titulo</h3>
+            </a>
+            </article>
+        
+    </div>
+    
+</div>
+{% endblock  %}

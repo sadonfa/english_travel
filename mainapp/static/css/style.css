@@ -1,17 +1,18 @@
 /* ESTILOS GENERALES */
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-body{
+body {
     font-family: "Montserrat";
 }
+
 /* FIN DE ESTILOS GENERALES */
 
 /* ESTILOS DE CABECERA */
 
-#header{
+#header {
     /* position: absolute; */
     width: 100%;
     /* background-color: #000080; */
@@ -22,33 +23,33 @@ body{
     color: white;
     display: flex;
     justify-content: space-around;
-    
+
 }
 
-.logo{
+.logo {
     width: 200px;
 }
 
-.logo img{
+.logo img {
     width: 220px;
     /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
 /* ESTILOS DEL MENU  */
-.main ul{
+.main ul {
     display: flex;
     justify-content: space-between;
     justify-items: center;
     line-height: 80px;
 }
 
-.main li{
+.main li {
     display: block;
     padding-right: 25px;
     padding-left: 25px;
     /* border: 1px solid yellow; */
-    
+
 }
 
 .main a {
@@ -61,16 +62,17 @@ body{
 
 }
 
-.main a:hover{
+.main a:hover {
     scale: 1.1;
 }
+
 /* FIN ESTILOS DEL MENU  */
 
 /* FIN DE ESTILOS DE CABECERA */
 
 /* ESTILOS DE DESCRIPCION  */
 
-.desc{
+.desc {
     height: 100vh;
     background-color: #ddd;
     background-image: url("../images/dubai-skyline-at-dusk-jpg_header-144981.jpeg");
@@ -78,25 +80,25 @@ body{
     background-size: cover;
 }
 
-.desc article{
+.desc article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
+    flex-direction: column;
     width: 100%;
     margin: 0px auto;
     /* text-align: center; */
-    height: 100vh ;  
-    background-color: rgba(0, 0, 0, 0.5);  
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.desc .text_desc{
+.desc .text_desc {
     width: 60%;
     /* border: 1px solid yellow; */
     text-align: center;
 }
 
-.desc p{
+.desc p {
     font-family: "Montserrat Light";
     font-size: 33px;
     /* margin-bottom: 5px; */
@@ -105,14 +107,14 @@ body{
     line-height: 34px;
 }
 
-.desc .description{
+.desc .description {
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 35px;
     letter-spacing: 0;
 }
 
-.desc input[type="text"]{
+.desc input[type="text"] {
     padding: 10px;
     width: 65%;
     height: 28px;
@@ -120,9 +122,9 @@ body{
     border-radius: 10px 10px;
 }
 
-button,
+.btn,
 input[type="submit"],
-input[type="button"]{
+input[type="button"] {
     padding: 15px;
     padding-left: 40px;
     padding-right: 40px;
@@ -132,20 +134,23 @@ input[type="button"]{
     border-radius: 10px 10px;
     box-shadow: 1px 1px 2px #333;
     margin-top: 30px;
+    margin-bottom: 30px;
     cursor: pointer;
+    font-size: 18px;
+    font-family: "Roboto";
     font-size: 18px;
 }
 
-/* FIN ESTILOS DE DESCRIPCION  */   
+/* FIN ESTILOS DE DESCRIPCION  */
 
 /* ESTILOS DE CURSOS */
 
-.cursos{
+.cursos {
     width: 100%;
     /* background-color: #ddd; */
 }
 
-.title{
+.title {
     font-size: 28px;
     font-family: "Montserrat SemiBold";
     text-align: center;
@@ -154,13 +159,13 @@ input[type="button"]{
 }
 
 .cursos hr,
-.travel hr{
+.travel hr {
     width: 25%;
     margin: 5px auto;
     border-color: red;
 }
 
-.subtitle{
+.subtitle {
     font-size: 18px;
     font-family: "Montserrat light";
     text-align: center;
@@ -168,14 +173,14 @@ input[type="button"]{
     color: #000080;
 }
 
-.destinos{
+.destinos {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
 }
 
-.destinos article{
+.destinos article {
     width: 22%;
     height: 380px;
     background-color: #333;
@@ -187,16 +192,16 @@ input[type="button"]{
     background-position: right;
 }
 
-.destinos h3{
+.destinos h3 {
     line-height: 380px;
     text-align: center;
     text-shadow: 1px 1px 10px #333;
     font-size: 34px;
     font-family: "Montserrat Light";
-   
+
 }
 
-.cursos button{
+.cursos button {
     display: block;
     align-items: center;
     margin: 0px auto;
@@ -208,7 +213,7 @@ input[type="button"]{
 
 /* ESTILOS DE SERVICIOS */
 
-.servicios{
+.servicios {
     width: 100%;
     margin-top: 50px;
     color: white;
@@ -217,7 +222,7 @@ input[type="button"]{
     background-position: center;
 }
 
-.bac_serv{
+.bac_serv {
     background-color: rgba(0, 0, 125, 0.8);
     padding-top: 50px;
     padding-bottom: 50px;
@@ -227,7 +232,7 @@ input[type="button"]{
     align-items: flex-start;
 }
 
-.servicios article{
+.servicios article {
     flex-grow: 1;
     width: 20%;
     padding: 35px;
@@ -237,7 +242,7 @@ input[type="button"]{
     /* border: 1px solid white; */
 }
 
-.servicios img{
+.servicios img {
     width: 150px;
     margin-bottom: 20px;
 }
@@ -247,20 +252,20 @@ input[type="button"]{
 
 /* ESTILOS DE TURISMO */
 
-.travel{
+.travel {
     width: 100%;
-    margin-top: 50px;   
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.cont_travel{
-     display: flex;
+.cont_travel {
+    display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
-.cont_travel article{
+.cont_travel article {
     flex-grow: 1;
     width: 25%;
     height: 200px;
@@ -278,23 +283,24 @@ input[type="button"]{
 
 }
 
-.cont_travel h3{
+.cont_travel h3 {
     color: white;
     text-shadow: 1px 1px 5px black;
     font-size: 34px;
 }
 
-.travel button{
-    display: block;   
+.travel button {
+    display: block;
     margin: 0px auto;
     margin-top: 50px;
-    
+
 }
+
 /* FIN DE ESTILOS DE TURISMO */
 
 /* ESTILOS DEL FOOTER */
 
-footer{
+footer {
     width: 100%;
     background-image: url("../images/Australia_Day.jpg");
     background-size: cover;
@@ -306,9 +312,10 @@ footer{
     color: white;
     padding-top: 80px;
     padding-bottom: 10px;
-    
+
 }
-.cont_footer{
+
+.cont_footer {
     display: flex;
     /* flex-flow: row wrap; */
     justify-content: space-between;
@@ -317,18 +324,19 @@ footer{
     padding-right: 40px;
 }
 
-.footer img{
+.footer img {
     width: 400px;
 }
 
-.footer h2{
+.footer h2 {
     margin-bottom: 20px;
 }
 
-.footer li{
+.footer li {
     list-style: square inside;
 }
-.footer hr{
+
+.footer hr {
     width: 80%;
     border-color: white;
     margin: 0px auto;
@@ -336,7 +344,7 @@ footer{
     margin-bottom: 10px;
 }
 
-.footer .autor{
+.footer .autor {
     text-align: center;
     margin-top: 10px;
 }
@@ -359,7 +367,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 35px;    
+    margin-top: 35px;
 }
 
 
@@ -394,3 +402,99 @@ footer{
 }
 
 /* --- Fin --- About  */
+
+.box-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-travels {
+    flex-basis: 20%;
+    flex-grow: 1;
+    margin: 30px;
+    box-shadow: 0px 0px 8px #ddd;
+}
+
+.box-travels img {
+    width: 100%;
+
+}
+
+.box-content-pg {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-travels-pg,
+.box-description {
+    width: 40%;
+}
+
+.box-travels-pg img {
+    width: 100%;
+}
+
+.box-description h1 {
+    font-family: "Roboto Medium";
+}
+
+.box-description p {
+    font-family: "Montserrat";
+    margin-top: 15px;
+}
+
+.box-description a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.items-leng{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.item{
+    width: 30%;
+    box-shadow: 0px 0px 10px #bbb;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.img-item{
+    width: 100%;
+}
+
+.img-item img{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.item h3{
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.item a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+.item a:hover img{
+    /* filter: grayscale(1); */
+    /* filter: blur(5px); */
+    /* filter: brightness(200%); */
+    /* filter: contrast(200%); */
+    /* filter: drop-shadow(8px 8px 10px gray); */
+    filter: grayscale(90%);
+    /* filter: hue-rotate(90deg); */
+    /* filter: invert(100%); */
+    /* filter: opacity(30%); */
+    /* filter: sepia(100%); */
+    /* filter: saturate(800%); */
+    /* filter: contrast(200%) brightness(150%); */
+}

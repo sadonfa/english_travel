@@ -7,12 +7,15 @@
 <div class="content-pg">
 
     <h1>{{ titulo }}</h1>    
+    <div class="box-content">
     {% for travel in travels  %}
-    <div class="box-travels">
+    <div class="box-travels">  
+        <a href=" {% url 'tour' travel.id %} ">    
         <img src="{{travel.image.url}}" alt="{{travel.title}}">
-        <span> {{ travel.title }} </span>
+    </a>  
     </div>
     {% endfor %}
+</div>
 </div>
 
 {% endblock  %}

@@ -11,3 +11,12 @@ def travel(request):
         'titulo': 'Paquetes Turisticos',
         'travels': travels
     })
+
+def tour(request, id):
+
+    travel = Travels.objects.get(id=id)
+   
+    return render(request, 'travel-pg.html', {
+        'titulo': 'Paquetes Turisticos',
+        'travel': travel
+    })

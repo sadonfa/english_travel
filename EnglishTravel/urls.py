@@ -23,6 +23,7 @@ urlpatterns = [
     path('', views.home, name="home"),
     path('', include('travel.urls')),
     path('', include('about.urls')),
+    path('', include('lenguages.urls')),
     #  path('contacto/', views.contacto, name="contacto")
 ]
 
