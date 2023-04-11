@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('idiomas/', views.lenguages, name="lenguage"),
-    path('idioma/', views.pglenguages, name="lengua")
+    path('idioma/<int:id>/', views.pglenguages, name="lengua")
 ]

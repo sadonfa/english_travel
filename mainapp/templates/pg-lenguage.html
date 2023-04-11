@@ -1,15 +1,40 @@
 {% extends 'layout/index.html' %}
 {% load static %}
 
-{% block title %} {{ titulo }} {% endblock  %}
+{% block title %} {{ title }} {% endblock  %}
 
 {% block content %}
 
-<div class="content-pg">
 
-    <h1>{{ title }}</h1>
+<div class="leng-img">
+    <img src="{{ leng.image.url}}" alt="{{ leng.title }}" />
+    <h1>{{ leng.title }}</h1>
+</div>
+ <div class="content-pg">   
    
+    <div class="leng-content">
+        <div class="leng-description">
+           {{leng.content|safe}}
 
+        </div>
+        <div class="leng-lateral">
+            <div class="lat-form">
+                <h3>Cotiza tu Programa</h3>
+                <form>
+                    <input type="text" placeholder="Nombres y Apellidos" />
+                    <input type="text" placeholder="Telefono"/>
+                    <input type="text" placeholder="Correo"/>
+                    <input type="text" placeholder="Destino"/>
+                    <textarea placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Cotizar" />
+                </form>
+            </div>
+            <div class="banner">
+                <img src="{% static 'images/Imagen1.png' %}" alt="banner" />
+            </div>
+        </div>
+    
+    </div>
 </div>
 
 {% endblock  %}

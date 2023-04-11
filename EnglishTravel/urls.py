@@ -24,7 +24,7 @@ urlpatterns = [
     path('', include('travel.urls')),
     path('', include('about.urls')),
     path('', include('lenguages.urls')),
-    #  path('contacto/', views.contacto, name="contacto")
+    path('', include('contact.urls')),
 ]
 
 

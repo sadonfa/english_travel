@@ -5,34 +5,24 @@
 
 {% block content %}
 <div class="content-pg">
-    <h1>{{ title }}</h1>
+    <h1 class='title-pg'>{{ title }}</h1>
 
     <div class="items-leng">
-        <article class="item">
-            <a href="#">
-                <div class="img-item">
-                    <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
-                </div>
-                <h3>Titulo</h3>
-            </a>
-        </article>
-        <article class="item">
-            <a href="#">
-                <div class="img-item">
-                    <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
-                </div>
-                <h3>Titulo</h3>
-            </a>
-        </article>
+       
+        {% for leng in lengs  %}
         
-            <article class="item">
-                <a href="{% url 'lengua' %}">
+         <article class="item">
+                <a href="{% url 'lengua' leng.id %}">
                     <div class="img-item">
-                        <img src="{% static 'images/dubai-skyline-at-dusk-jpg_header-144981.jpeg' %}" alt="Title">
+                        <img src="{{ leng.image.url }}" alt="{{ leng.title }}">
                     </div>
-                <h3>Titulo</h3>
+                <h3>{{ leng.title }}</h3>
             </a>
             </article>
+        
+        {% endfor %}
+        
+           
         
     </div>
     
