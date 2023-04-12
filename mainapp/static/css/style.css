@@ -22,18 +22,18 @@ body {
     box-shadow: 1px 1px 15px black;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
 .logo {
     width: 200px;
+    margin-left: 20px;
 }
 
 .logo img {
     width: 220px;
-    /* padding-top: 10px; */
-    padding-bottom: 10px;
 }
 
 /* ESTILOS DEL MENU  */

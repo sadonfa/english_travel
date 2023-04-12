@@ -13,6 +13,9 @@
     <!-- ESTILOS DE FUENTES -->
     <link rel="stylesheet" href="{% static 'css/fonts.css' %}">
 
+    <!-- ESTILOS MENU -->
+    <link rel="stylesheet" href="{% static 'css/nav/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav/responsive.css' %}">
 
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="{% static 'fontawesome/css/fontawesome.css'%}">
@@ -29,15 +32,20 @@
         </div>
 
         <!-- MENU  -->
-        <nav class="main">
-            <ul>
-                <li><a href="{% url 'home'%}">Inicio</a> </li>
-                <li><a href="{% url 'about'%}">Nosotros</a> </li>
-                <li><a href="{% url 'travels'%}">Viajes</a> </li>
-                <li><a href="{% url 'lenguage'%}">Cursos Ingles</a> </li>
-                <li><a href="{% url 'contact'%}">Contacto</a> </li>
-            </ul>
+        <nav id="nav" class="main-nav">
+            <div class="nav-links">
+                <a class="link-item" href="{% url 'home'%}">Inicio</a>
+                <a class="link-item" href="{% url 'about'%}">Nosotros</a>
+                <a class="link-item" href="{% url 'travels'%}">Viajes</a> 
+                <a class="link-item" href="{% url 'lenguage'%}">Cursos Ingles</a> 
+                <a class="link-item" href="{% url 'contact'%}">Contacto</a> 
+            </div>
         </nav>
+        <button id="button-menu" class="button-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
 
@@ -71,7 +79,6 @@
                 <ul>
                     <li><i class="fa-solid fa-envelope"></i> agenciaintercambioset@gmail.com</li>
                     <li> <i class="fa-brands fa-whatsapp"></i>318 267 21 44 </li>
-                    <li> <i class="fa-solid fa-phone"></i> 310 442 23 06 </li>
 
                 </ul>
 
@@ -91,4 +98,5 @@
          
     </footer>
 </body>
+<script src="{% static 'js/script.js' %} "></script>
 </html>
