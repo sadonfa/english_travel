@@ -16,7 +16,8 @@ body {
     /* position: absolute; */
     width: 100%;
     /* background-color: #000080; */
-    background-color: rgba(0, 0, 125, 0.8);
+    /*background-color: rgba(0, 0, 125, 0.8);*/
+    background-color: #D23130;
     /* margin-bottom: 50px; */
     height: 70px;
     box-shadow: 1px 1px 15px black;
