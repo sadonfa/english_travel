@@ -4,7 +4,7 @@ from .models import Lenguages
 # Create your views here.
 
 def lenguages(request):
-    lengs = Lenguages.objects.all()
+    lengs = Lenguages.objects.order_by("id")
 
     return render(request, 'lenguages.html',{
         'lengs': lengs,
