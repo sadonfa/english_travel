@@ -7,7 +7,7 @@ from lenguages.models import Lenguages
 def home(request):
     
     travels = Travels.objects.all().order_by('-create_ad')[:3]
-    lengs = Lenguages.objects.all().order_by('create_ad')[:3]
+    lengs = Lenguages.objects.all().order_by('id')[:3]
 
     return render(request, "home.html",{
         'travels': travels,
